@@ -38,7 +38,8 @@
   padding: 0;
 }
 
-.nav-list button {
+.nav-list button,
+.nav-list .github-link {
   background: none;
   border: none;
   color: #ccc;
@@ -48,9 +49,11 @@
   border-radius: 20px;
   transition: all 0.3s ease;
   text-decoration: none;
+  display: inline-block;
 }
 
-.nav-list button:hover {
+.nav-list button:hover,
+.nav-list .github-link:hover {
   color: #00d4ff;
   background: rgba(0, 212, 255, 0.1);
 }

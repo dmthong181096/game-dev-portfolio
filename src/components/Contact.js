@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Location',
-      value: 'Binh Tan, Ho Chi Minh City',
+      value: 'Ho Chi Minh City',
       link: '#'
     },
     {
@@ -59,6 +59,12 @@ const Contact = () => {
       title: 'Facebook',
       value: 'facebook.com/doanminhthong1810',
       link: 'https://www.facebook.com/doanminhthong1810'
+    },
+    {
+      icon: '🐙',
+      title: 'GitHub',
+      value: 'github.com/dmthong181096',
+      link: 'https://github.com/dmthong181096'
     }
   ];
 

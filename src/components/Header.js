@@ -37,6 +37,16 @@ const Header = () => {
             <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
             <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>
             <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
+            <li>
+              <a 
+                href="https://github.com/dmthong181096" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="github-link"
+              >
+                🐙 GitHub
+              </a>
+            </li>
           </ul>
         </nav>
 

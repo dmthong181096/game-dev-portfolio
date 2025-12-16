@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
-                <span>Binh Tan, Ho Chi Minh City</span>
+                <span>Ho Chi Minh City</span>
               </div>
             </div>
           </div>
