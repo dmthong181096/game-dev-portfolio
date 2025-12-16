@@ -20,7 +20,8 @@ const Skills = () => {
         { name: 'Bug Fixing', level: 60, icon: '🔧' },
         { name: 'Backend Integration', level: 50, icon: '🔗' },
         { name: 'FE-BE Contracts', level: 55, icon: '📋' },
-        { name: 'Code Review', level: 55, icon: '👁️' }
+        { name: 'Code Review', level: 55, icon: '👁️' },
+        { name: 'Improve Tool', level: 40, icon: '🛠️' }
       ]
     }
   ];
