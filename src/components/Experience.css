@@ -1,0 +1,360 @@
+.experience {
+  background: #0a0a0a;
+  position: relative;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 30%, rgba(0, 212, 255, 0.03) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(255, 0, 255, 0.03) 50%, transparent 70%);
+}
+
+.experience .container {
+  position: relative;
+  z-index: 2;
+}
+
+.experience-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.work-experience h3,
+.education-section h3 {
+  color: #00d4ff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-marker {
+  position: relative;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #00d4ff, #ff00ff);
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.timeline-line {
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(180deg, #00d4ff, #ff00ff);
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.experience-card:hover::before {
+  left: 100%;
+}
+
+.experience-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.experience-header h4 {
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.company {
+  color: #ff00ff;
+  font-weight: 600;
+}
+
+.period {
+  color: #00ff88;
+  font-size: 0.9rem;
+}
+
+.location {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.experience-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.achievements h5 {
+  color: #00ff88;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.achievements li {
+  color: #ccc;
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.technical-contributions {
+  margin-top: 1.5rem;
+}
+
+.technical-contributions h5 {
+  color: #00d4ff;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.technical-contributions ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.technical-contributions li {
+  color: #ccc;
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.technical-contributions li::before {
+  content: '⚡';
+  position: absolute;
+  left: 0;
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 0, 255, 0.2);
+  border-color: rgba(255, 0, 255, 0.3);
+}
+
+.education-header h4 {
+  color: #ff00ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.school {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+.education-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.education-achievements h5 {
+  color: #00ff88;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.education-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-achievements li {
+  color: #ccc;
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.education-achievements li::before {
+  content: '🎓';
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+  border-color: rgba(0, 255, 136, 0.3);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00d4ff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-marker {
+    margin-right: 1rem;
+  }
+  
+  .experience-card,
+  .education-card {
+    padding: 1.5rem;
+  }
+  
+  .experience-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-meta,
+  .education-meta {
+    gap: 0.2rem;
+  }
+  
+  .experience-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
